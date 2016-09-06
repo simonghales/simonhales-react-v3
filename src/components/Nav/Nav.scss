@@ -1,0 +1,10 @@
+
+@import '../../styles/shared/layout';
+
+.root {
+
+}
+
+.content {
+  @extend %layout-max-width;
+}

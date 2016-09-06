@@ -1,0 +1,11 @@
+
+@import '../shared/typography';
+
+body {
+  @extend %font--default;
+}
+
+button,
+label {
+  @extend %font--default;
+}
