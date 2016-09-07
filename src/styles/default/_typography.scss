@@ -1,11 +1,18 @@
 
+@import '../variables/typography';
 @import '../shared/typography';
 
 body {
   @extend %font--default;
+  font-family: $typography-base-fontsize;
 }
 
 button,
 label {
   @extend %font--default;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }

@@ -5,6 +5,31 @@
 
 }
 
-.content {
-  @extend %layout-max-width;
-}
+  .content {
+    //background-color: #FFFFFF;
+    //display: inline-block;
+  }
+
+    $link____border-width: 3px;
+    $link____color: #ffffff;
+    $link____inverse-color: #f30d53;
+    .link {
+      border-bottom: $link____border-width solid transparent;
+      color: $link____color;
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      margin-right: 10px;
+      padding: 4px 1px;
+      text-transform: uppercase;
+
+      &:hover {
+        color: $link____inverse-color;
+        border-color: $link____inverse-color;
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+    }

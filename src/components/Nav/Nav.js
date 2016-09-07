@@ -12,9 +12,10 @@ class Nav extends React.Component {
     return(
       <nav className={classes['root']}>
         <div className={classes['content']}>
-          <a href="">Skills</a>
-          <a href="">Projects</a>
-          <a href="">About</a>
+          <a href="" className={classes['link']}>Home</a>
+          <a href="" className={classes['link']}>Skills</a>
+          <a href="" className={classes['link']}>Projects</a>
+          <a href="" className={classes['link']}>About</a>
         </div>
       </nav>
     );

@@ -1,3 +1,29 @@
 %font--default {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
+
+%font--heading {
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+}
+
+%heading-site {
+  @extend %font--heading;
+  color: #FFFFFF;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+%heading-major {
+  @extend %font--heading;
+  color: #FFFFFF;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+%heading-medium {
+  @extend %font--heading;
+  color: #FFFFFF;
+  font-size: 2rem;
+  font-weight: 300;
+}

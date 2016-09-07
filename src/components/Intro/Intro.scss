@@ -1,10 +1,46 @@
 
 @import '../../styles/shared/layout';
+@import '../../styles/shared/sizing';
+@import '../../styles/shared/typography';
 
 .root {
-
+  height: 100vh;
+  padding: $general-padding;
+  background-color: #FFFFFF;
 }
 
+  $content____padding: 20px;
   .content {
-    @extend %layout-max-width;
+    width: 100%;
+    height: 100%;
+    background-color: #3C3C3C;
+    padding: $content____padding;
+    position: relative;
+  }
+
+  .text-wrapper {
+    margin: 80px 0;
+  }
+
+    .author-title {
+      @extend %heading-major;
+    }
+
+    .main-title {
+      @extend %heading-site;
+      margin: 10px 0;
+    }
+
+    .sub-title {
+      @extend %heading-medium;
+    }
+
+    .social-wrapper {
+      margin-top: 20px;
+    }
+
+  .nav-wrapper {
+    position: absolute;
+    left: $content____padding;
+    bottom: $content____padding;
   }
