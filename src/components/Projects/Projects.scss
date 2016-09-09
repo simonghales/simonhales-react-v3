@@ -1,0 +1,21 @@
+@import '../../styles/shared/layout';
+@import '../../styles/shared/sizing';
+@import '../../styles/shared/typography';
+
+.root {
+  @extend %layout-page--side-only;
+  margin-top: 40px;
+  margin-bottom: 500px;
+}
+
+  .content {
+    @extend %layout-full-page__content;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+    .project-wrapper {
+      flex: 1;
+      padding: 0 20px;
+    }

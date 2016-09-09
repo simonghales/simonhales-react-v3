@@ -1,20 +1,22 @@
 
 @import '../../styles/mixins/default';
+@import '../../styles/variables/colors';
 
 .Social {
 }
 
+  $social____color: $color-light;
+  $social____color--hover: $color-medium;
   .social-option {
-    color: #FFFFFF;
+    color: $social____color;
     margin-top: 10px;
 
     > a {
 
       &:hover {
 
-        .icon {
-          background-color: #FFFFFF;
-          color: #000000;
+        .text {
+          color: $color-vibrant;
         }
 
       }
@@ -30,7 +32,7 @@
     $icon____size: 26px;
     .icon {
       @include border-radius(50%);
-      border: 2px solid #FFFFFF;
+      border: 2px solid $color-faint;
       display: inline-block;
       font-size: 11px;
       height: $icon____size;

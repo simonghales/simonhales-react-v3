@@ -1,0 +1,27 @@
+
+@import '../../styles/shared/typography';
+@import '../../styles/shared/info-block';
+
+.root {
+  @extend %info-block;
+}
+
+  .title {
+    @extend %heading--list-title;
+    margin-bottom: 14px;
+  }
+
+  .list {
+    font-size: .8rem;
+    font-weight: 700;
+
+    > li {
+      margin-top: 12px;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+
+    }
+
+  }

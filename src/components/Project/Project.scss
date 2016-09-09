@@ -1,0 +1,34 @@
+
+@import '../../styles/shared/typography';
+
+.root {
+  background-color: #ffffff;
+  height: 400px;
+  display: flex;
+}
+
+  .thumbnail {
+    width: calc(50% + 20px);
+    height: 100%;
+    background-color: #f0f0f0;
+  }
+
+  .info {
+    flex: 1;
+    height: 100%;
+    padding: 30px 20px;
+  }
+
+    .title {
+      @extend %heading-project;
+    }
+
+    .subtitle {
+      @extend %heading-sml-medium;
+      margin-top: 10px;
+    }
+
+    .description {
+      @extend %text--small;
+      margin-top: 10px;
+    }

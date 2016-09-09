@@ -4,6 +4,7 @@
 
 body {
   @extend %font--default;
+  color: $color-darkest;
   font-family: $typography-base-fontsize;
 }
 

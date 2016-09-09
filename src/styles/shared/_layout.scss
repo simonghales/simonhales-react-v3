@@ -1,4 +1,29 @@
+
+@import './sizing';
+
 %layout-max-width {
   max-width: 1024px;
   margin: 0 auto;
 }
+
+%layout-page {
+  padding: $general-padding;
+}
+
+%layout-page--side-only {
+  @extend %layout-page;
+  padding: 0 $general-padding;
+}
+
+%layout-full-page {
+  @extend %layout-page;
+  //height: 100vh;
+  //background-color: #FFFFFF;
+}
+
+  %layout-full-page__content {
+    width: 100%;
+    height: 100%;
+    padding: $general-content-padding;
+    position: relative;
+  }

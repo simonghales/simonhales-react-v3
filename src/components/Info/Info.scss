@@ -1,0 +1,23 @@
+@import '../../styles/mixins/default';
+@import '../../styles/shared/layout';
+@import '../../styles/shared/sizing';
+@import '../../styles/shared/typography';
+
+.root {
+  @extend %layout-page--side-only;
+}
+
+  .content {
+    @extend %layout-full-page__content;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+    .info-block-wrapper {
+      flex: 1;
+      padding: 0 20px;
+    }
+
+    .info-block {
+    }

@@ -14,9 +14,9 @@ export const Intro = () => (
           <Social />
         </div>
       </div>
-      <div className={classes['nav-wrapper']}>
-        <Nav />
-      </div>
+      {/*<div className={classes['nav-wrapper']}>*/}
+        {/*<Nav />*/}
+      {/*</div>*/}
     </div>
   </div>
 )

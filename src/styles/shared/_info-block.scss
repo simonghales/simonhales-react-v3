@@ -1,0 +1,10 @@
+
+@import '../mixins/default';
+
+%info-block {
+  @include border-radius(3px);
+  @include box-shadow(0, 1px, 3px, rgba(0,0,0,0.1));
+  background-color: #ffffff;
+  padding: 30px 20px;
+  min-height: 230px;
+}

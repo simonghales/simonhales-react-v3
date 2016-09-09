@@ -1,0 +1,16 @@
+
+@import '../../styles/shared/typography';
+@import '../../styles/shared/info-block';
+
+.root {
+  @extend %info-block;
+}
+
+  .title {
+    @extend %heading--list-title;
+    margin-bottom: 10px;
+  }
+
+  .description {
+    @extend %text--small;
+  }

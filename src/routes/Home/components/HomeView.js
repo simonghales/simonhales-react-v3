@@ -1,11 +1,13 @@
 import React from 'react'
-import DuckImage from '../assets/Duck.jpg'
-import classes from './HomeView.scss'
 import Intro from '../../../components/Intro'
+import Info from '../../../components/Info'
+import Projects from '../../../components/Projects'
 
 export const HomeView = () => (
   <div>
     <Intro />
+    <Info />
+    <Projects />
   </div>
 )
 
