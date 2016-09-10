@@ -1,9 +1,12 @@
 
+@import '../../styles/variables/colors';
 @import '../../styles/shared/typography';
+@import '../../styles/shared/block';
 
 .root {
-  background-color: #ffffff;
-  height: 400px;
+  @extend %common-block;
+  overflow: hidden;
+  height: 340px;
   display: flex;
 }
 
@@ -32,3 +35,32 @@
       @extend %text--small;
       margin-top: 10px;
     }
+
+    .link-wrapper {
+      margin-top: 10px;
+    }
+
+      .link {
+        border: 2px solid #eaeaea;
+        color: $color-med-light;
+        display: inline-block;
+        font-size: .8rem;
+        padding: 8px 10px;
+
+        &:hover {
+          border-color: #e0e0e0;
+          color: #333333;
+        }
+
+        .icon {
+          display: inline-block;
+          margin-right: 6px;
+          position: relative;
+          top: 1px;
+        }
+
+        .text {
+
+        }
+
+      }

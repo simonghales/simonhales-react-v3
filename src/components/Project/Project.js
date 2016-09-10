@@ -1,6 +1,7 @@
 import React from 'react'
 import classes from './Project.scss'
-
+import ProjectExternalLink from '../ProjectExternalLink'
+var FontAwesome = require('react-fontawesome')
 
 class Project extends React.Component {
 
@@ -9,23 +10,34 @@ class Project extends React.Component {
   }
 
   render() {
+
+    const { project } = this.props;
+
+    const { title, subtitle, description, external_links } = project;
+
     return(
       <div className={classes['root']}>
         <div className={classes['thumbnail']}>
         </div>
         <div className={classes['info']}>
-          <h3 className={classes['title']}>Project Title</h3>
-          <h4 className={classes['subtitle']}>Subtitle</h4>
-          <p className={classes['description']}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem commodi consectetur
-            delectus deleniti dignissimos ducimus eos.
-          </p>
-          <p className={classes['description']}>
-            Facere facilis, incidunt iste labore natus nisi non obcaecati possimus repellat soluta vitae.
-          </p>
-          <div>
-            <a href="">visit website</a>
-          </div>
+          <h3 className={classes['title']}>{title}</h3>
+          <h4 className={classes['subtitle']}>{subtitle}</h4>
+          {
+            description.map((text) => {
+              return(
+                <p className={classes['description']}>{text}</p>
+              );
+            })
+          }
+          {
+            external_links.map((data) => {
+              return(
+                <div className={classes['link-wrapper']}>
+                  <ProjectExternalLink data={data} />
+                </div>
+              );
+            })
+          }
         </div>
       </div>
     );
@@ -34,6 +46,7 @@ class Project extends React.Component {
 }
 
 Project.propTypes = {
+  project: React.PropTypes.object.isRequired
 }
 
 export default Project

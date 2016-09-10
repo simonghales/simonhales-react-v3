@@ -1,6 +1,7 @@
 import React from 'react'
 import classes from './Projects.scss'
 import Project from '../Project'
+import { PROJECTS_LIST  } from '../../data/projects'
 
 class Projects extends React.Component {
 
@@ -9,15 +10,21 @@ class Projects extends React.Component {
   }
 
   render() {
+
+    const allProjects = PROJECTS_LIST;
+
     return(
       <div className={classes['root']}>
         <div className={classes['content']}>
-          <div className={classes['project-wrapper']}>
-            <Project />
-          </div>
-          <div className={classes['project-wrapper']}>
-            <Project />
-          </div>
+          {
+            allProjects.map((project) => {
+              return(
+                <div className={classes['project-wrapper']}>
+                  <Project project={project} />
+                </div>
+              );
+            })
+          }
         </div>
       </div>
     );

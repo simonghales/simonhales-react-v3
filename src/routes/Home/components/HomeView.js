@@ -1,4 +1,5 @@
 import React from 'react'
+import Bio from '../../../components/Bio'
 import Intro from '../../../components/Intro'
 import Info from '../../../components/Info'
 import Projects from '../../../components/Projects'
@@ -8,6 +9,7 @@ export const HomeView = () => (
     <Intro />
     <Info />
     <Projects />
+    <Bio />
   </div>
 )
 

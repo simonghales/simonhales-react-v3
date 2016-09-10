@@ -40,12 +40,13 @@
 
 %heading-project {
   @extend %font--heading;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 300;
 }
 
 %heading-sml-medium {
   @extend %font--heading;
+  color: $color-med-light;
   font-size: .8rem;
   font-weight: 700;
 }

@@ -2,11 +2,12 @@
 @import './sizing';
 
 %layout-max-width {
-  max-width: 1024px;
+  max-width: 1366px;
   margin: 0 auto;
 }
 
 %layout-page {
+  @extend %layout-max-width;
   padding: $general-padding;
 }
 

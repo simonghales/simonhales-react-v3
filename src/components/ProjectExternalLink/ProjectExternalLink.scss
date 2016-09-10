@@ -1,0 +1,14 @@
+
+@import '../../styles/shared/project-link';
+
+.root {
+}
+
+  .link {
+    @extend %project-link;
+
+    .icon {
+      @extend %project-link__icon;
+    }
+
+  }

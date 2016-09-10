@@ -1,0 +1,22 @@
+
+@import '../variables/colors';
+
+%project-link {
+  border: 2px solid #eaeaea;
+  color: $color-med-light;
+  display: inline-block;
+  font-size: .8rem;
+  padding: 8px 10px;
+
+  &:hover {
+    color: #333333;
+  }
+
+}
+
+  %project-link__icon {
+    display: inline-block;
+    margin-right: 6px;
+    position: relative;
+    top: 1px;
+  }
