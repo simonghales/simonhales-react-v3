@@ -1,0 +1,14 @@
+@import '../../styles/shared/layout';
+@import '../../styles/shared/sizing';
+@import '../../styles/shared/typography';
+
+.root {
+  @extend %layout-page--side-only;
+  margin-top: 80px;
+  margin-bottom: 160px;
+}
+
+  .content {
+    @extend %layout-full-page__content;
+    padding: 0;
+  }

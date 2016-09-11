@@ -19,7 +19,7 @@ export const SKILLS_LISTS = [
       "Web Applications",
       "Responsive Design",
       "Unit & E2E Testing",
-      "Web Optimisation"
+      "Web Performance"
     ]
   }
 ]

@@ -1,0 +1,42 @@
+@import '../../styles/variables/colors';
+@import '../../styles/shared/typography';
+@import '../../styles/shared/info-block';
+
+.root {
+  @extend %info-block;
+}
+
+  .title {
+    @extend %heading--list-title;
+    margin-bottom: 10px;
+    text-align: center;
+
+    .position {
+      color: $color-darkest;
+      display: inline-block;
+      font-weight: 700;
+      margin-right: 10px;
+    }
+
+    .company {}
+
+  }
+
+  .description-wrapper {}
+
+    .description {
+      @extend %text--medium;
+    }
+
+  .projects {
+    margin-top: 25px;
+  }
+
+    .project-wrapper {
+      margin-top: 40px;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+
+    }

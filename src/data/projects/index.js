@@ -13,7 +13,7 @@ export const PROJECT_SOONIS = {
       "url": "http://soon.is"
     }
   ],
-  "image": ""
+  "image": "/images/projects/soonis_thumb.jpg"
 }
 
 export const PROJECT_WHATSUPBRISBANE = {
@@ -30,7 +30,7 @@ export const PROJECT_WHATSUPBRISBANE = {
       "url": "https://github.com/simonghales/whatsupbrisbane"
     }
   ],
-  "image": ""
+  "image": "/images/projects/whatsup_thumb.jpg"
 }
 
 export const PROJECTS_LIST = [

@@ -1,0 +1,53 @@
+
+@import '../../styles/mixins/default';
+@import '../../styles/shared/typography';
+
+.root {
+  display: flex;
+  justify-content: center;
+}
+
+  .content {
+    display: flex;
+  }
+
+    .side {}
+
+      $thumb____size: 60px;
+      .thumb {
+        @include border-radius(50%);
+        width: $thumb____size;
+        height: $thumb____size;
+        background-color: #d0d0d0;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        background-image: url('assets/me.png');
+
+        @include image-2x('assets/me@2x.png', 50, 50);
+
+      }
+
+    .main {
+      flex: 1;
+      margin-left: 15px;
+    }
+
+    .text-wrapper {
+      $_margin: 20px;
+      border-bottom: 1px solid #d0d0d0;
+      padding-bottom: $_margin;
+      margin-bottom: $_margin;
+    }
+
+      .author-name {
+        @extend %heading-major--sml;
+        margin: 13px 0 5px 0;
+      }
+
+      .site-title {
+        @extend %heading-site--sml;
+      }
+
+    .social-wrapper {}

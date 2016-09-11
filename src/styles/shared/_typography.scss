@@ -17,11 +17,21 @@
   text-transform: uppercase;
 }
 
+%heading-site--sml {
+  @extend %heading-site;
+  font-size: 1rem;
+}
+
 %heading-major {
   @extend %font--heading;
   color: $color-medium;
   font-size: 2rem;
   font-weight: 300;
+}
+
+%heading-major--sml {
+  @extend %heading-major;
+  font-size: 1rem;
 }
 
 %heading-medium {
@@ -45,13 +55,19 @@
 }
 
 %heading-sml-medium {
-  @extend %font--heading;
-  color: $color-med-light;
+  @extend %font--default;
+  //color: $color-med-light;
+  color: $color-darkest;
   font-size: .8rem;
   font-weight: 700;
 }
 
 %text--small {
   font-size: .8rem;
-  line-height: 1.5rem;
+  line-height: 1.4rem;
+}
+
+%text--medium {
+  font-size: .9rem;
+  line-height: 1.4rem;
 }
