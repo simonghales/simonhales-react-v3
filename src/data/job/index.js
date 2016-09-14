@@ -19,7 +19,7 @@ export const JOB_HYDRIC_MEDIA = {
     {
       "title": "Spotify API Playground",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci debitis deserunt dicta eos maiores?",
-      "image": "/images/projects/project_wonder.jpg",
+      "image": "/images/projects/project_playground.jpg",
       "external_links": [
         {
           "icon": "external-link",
@@ -31,7 +31,7 @@ export const JOB_HYDRIC_MEDIA = {
     {
       "title": "Bose Readyset",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci debitis deserunt dicta eos maiores?",
-      "image": "/images/projects/project_wonder.jpg",
+      "image": "/images/projects/project_bose.jpg",
       "external_links": [
         {
           "icon": "external-link",

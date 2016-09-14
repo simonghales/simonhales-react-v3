@@ -1,42 +1,20 @@
+@import '../../styles/shared/project-link';
 
-@import '../../styles/mixins/default';
-@import '../../styles/variables/colors';
-
-$social____color: $color-light;
-$social____color--hover: $color-medium;
 .root {
-  color: $social____color;
+}
 
-  > a {
+  .link {
+    @extend %project-link;
+    @extend %project-link--darker;
 
-    &:hover {
+    .icon {
+      @extend %project-link__icon;
+      top: 0;
 
-      .icon,
-      .text {
-        color: $color-darkest;
+      &.icon--linkedin {
+        //top: -1px;
       }
 
     }
 
-  }
-
-}
-
-  $icon____size: 26px;
-  .icon {
-    @include border-radius(50%);
-    border: 2px solid $color-faint;
-    display: inline-block;
-    font-size: 11px;
-    height: $icon____size;
-    line-height: $icon____size - 4px;
-    margin-right: 8px;
-    text-align: center;
-    width: $icon____size;
-  }
-
-  .text {
-    display: inline-block;
-    font-size: 12px;
-    line-height: $icon____size - 1px;
   }

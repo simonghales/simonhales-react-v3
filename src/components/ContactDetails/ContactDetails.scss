@@ -23,9 +23,8 @@
         background-position: center;
         background-repeat: no-repeat;
 
-        background-image: url('assets/me.png');
-
-        @include image-2x('assets/me@2x.png', 50, 50);
+        background-image: url('assets/images/me.png');
+        @include image-2x('assets/images/me@2x.png', 50, 50);
 
       }
 
@@ -37,7 +36,7 @@
     .text-wrapper {
       $_margin: 20px;
       border-bottom: 1px solid #d0d0d0;
-      padding-bottom: $_margin;
+      padding-bottom: ($_margin - 3px);
       margin-bottom: $_margin;
     }
 

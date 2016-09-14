@@ -25,12 +25,12 @@ class SocialLink extends React.Component {
     return(
       <div className={classes['root']}>
         <a {...anchorProps}>
-          <div className={classes['icon']}>
+          <span className={[classes['icon'],classes['icon--' + icon]].join(' ')}>
             <FontAwesome name={icon} />
-          </div>
-          <div className={classes['text']}>
+          </span>
+          <span className={classes['text']}>
             {label}
-          </div>
+          </span>
         </a>
       </div>
     );

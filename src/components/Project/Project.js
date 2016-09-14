@@ -1,8 +1,6 @@
 import React from 'react'
 import classes from './Project.scss'
 import ProjectExternalLink from '../ProjectExternalLink'
-import ProjectImage from '../../static/images/projects/soonis_thumb.jpg'
-var FontAwesome = require('react-fontawesome')
 
 class Project extends React.Component {
 
@@ -16,10 +14,14 @@ class Project extends React.Component {
 
     const { title, subtitle, description, external_links, image } = project;
 
+    let thumbnailStyles = {
+      backgroundImage: 'url(' + image + ')'
+    };
+
     return(
       <div className={classes['root']}>
-        <div className={classes['thumbnail']}>
-          <img src={image} />
+        <div className={classes['thumbnail']} style={thumbnailStyles}>
+          {/*<img src={image} />*/}
         </div>
         <div className={classes['info']}>
           <h3 className={classes['title']}>{title}</h3>
