@@ -1,3 +1,6 @@
+
+@import '../../styles/vendors/include-media';
+@import '../../styles/shared/breakpoints';
 @import '../../styles/shared/layout';
 @import '../../styles/shared/sizing';
 @import '../../styles/shared/typography';
@@ -12,9 +15,25 @@
     display: flex;
     justify-content: space-between;
     padding: 0;
+
+    @include media('<=singleLayout') {
+      display: block;
+    }
+
   }
 
     .project-wrapper {
       flex: 1;
       padding: 0 20px;
+
+      @include media('<=singleLayout') {
+        flex: auto;
+        margin-top: 40px;
+
+        &:first-of-type {
+          margin-top: 0;
+        }
+
+      }
+
     }

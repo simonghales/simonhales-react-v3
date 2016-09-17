@@ -1,3 +1,5 @@
+@import '../../styles/vendors/include-media';
+@import '../../styles/shared/breakpoints';
 @import '../../styles/shared/layout';
 @import '../../styles/shared/sizing';
 @import '../../styles/shared/typography';
@@ -11,11 +13,21 @@
     @extend %layout-full-page__content;
     display: flex;
     padding: 0;
+
+    @include media('<=singleLayout') {
+      display: block;
+    }
+
   }
 
     .left-info,
     .right-info {
       width: 25%;
+
+      @include media('<=singleLayout') {
+        width: 100%;
+      }
+
     }
 
     .left-info {
@@ -25,6 +37,12 @@
     .middle-info {
       width: 50%;
       padding: 0 20px;
+
+      @include media('<=singleLayout') {
+        margin: 40px 0;
+        width: 100%;
+      }
+
     }
 
     .right-info {

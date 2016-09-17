@@ -2,11 +2,12 @@
 export const JOB_HYDRIC_MEDIA = {
   "title": "Front End Developer",
   "company": "Hydric Media",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci debitis deserunt dicta eos maiores? Ab asperiores, consectetur enim exercitationem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut beatae blanditiis consequatur.",
+  "description": "I currently work as a Front End Developer for Hydric Media. Hydric Media is an apps studio that is focused within the music industry. " +
+  "Whilst working for Hydric Media I have built web applications for many high-profile clients, including Spotify and Bose.",
   "projects": [
     {
       "title": "wonder.fm",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci debitis deserunt dicta eos maiores?",
+      "description": "Hydric Media's wonder-child is Wonder, an online indie music discovery chart. I built the AngularJS web application that powers the front-end of wonder.fm",
       "image": "/images/projects/project_wonder.jpg",
       "external_links": [
         {
@@ -18,7 +19,8 @@ export const JOB_HYDRIC_MEDIA = {
     },
     {
       "title": "Spotify API Playground",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci debitis deserunt dicta eos maiores?",
+      "description": "In early 2016 Spotify released a new set of API end-points allowing music recommendation generation. " +
+      "At Hydric Media we wanted to create a user-friendly interface for experimenting with these new end-points. This is the result (AngularJS).",
       "image": "/images/projects/project_playground.jpg",
       "external_links": [
         {
@@ -30,7 +32,8 @@ export const JOB_HYDRIC_MEDIA = {
     },
     {
       "title": "Bose Readyset",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci debitis deserunt dicta eos maiores?",
+      "description": "An AngularJS web application for pre-selecting playlists for Bose SoundTouch devices. When purchasing a new SoundTouch device users are " +
+      "taken to this web app where they can drag and drop their own playlists (or Spotify ones) to set-up their device before it even arrives.",
       "image": "/images/projects/project_bose.jpg",
       "external_links": [
         {

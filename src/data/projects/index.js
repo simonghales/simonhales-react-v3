@@ -3,8 +3,8 @@ export const PROJECT_SOONIS = {
   "title": "Soon.is",
   "subtitle": "AngularJS Web Application",
   "description": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem commodi consectetur delectus deleniti dignissimos ducimus eos.",
-    "Facere facilis, incidunt iste labore natus nisi non obcaecati possimus repellat soluta vitae."
+    "soon.is is a website for showcasing public moments and events.",
+    "I handled the front-end AngularJS development of the site as well as the design."
   ],
   "external_links": [
     {
@@ -20,8 +20,8 @@ export const PROJECT_WHATSUPBRISBANE = {
   "title": "What's Up Brisbane",
   "subtitle": "GovHack 2016 Entry",
   "description": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem commodi consectetur delectus deleniti dignissimos ducimus eos.",
-    "Facere facilis, incidunt iste labore natus nisi non obcaecati possimus repellat soluta vitae."
+    "A website for showcasing Brisbane events. Built for the GovHack 2016 event",
+    "I was in charge of the front-end of the site whilst 2 other developers handled the back-end. We won the award for 'Brisbane’s Art and Heritage'"
   ],
   "external_links": [
     {

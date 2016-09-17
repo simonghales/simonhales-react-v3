@@ -1,9 +1,15 @@
-
+@import '../vendors/include-media';
+@import './breakpoints';
 @import './sizing';
 
 %layout-max-width {
   max-width: 1366px;
   margin: 0 auto;
+
+  @include media('<=singleLayout') {
+    max-width: 720px;
+  }
+
 }
 
 %layout-page {

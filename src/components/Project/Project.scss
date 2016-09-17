@@ -1,5 +1,7 @@
 
 @import '../../styles/variables/colors';
+@import '../../styles/vendors/include-media';
+@import '../../styles/shared/breakpoints';
 @import '../../styles/shared/image';
 @import '../../styles/shared/typography';
 @import '../../styles/shared/block';
@@ -23,6 +25,11 @@
     flex: 1;
     height: 100%;
     padding: 30px 20px;
+
+    @include media('<=1280px') {
+      padding: 25px 20px;
+    }
+
   }
 
     .title {
@@ -33,11 +40,21 @@
     .subtitle {
       @extend %heading-sml-medium;
       margin-top: 10px;
+
+      //@include media('<=1100px') {
+      //  margin-top: 7px;
+      //}
+
     }
 
     .description {
       @extend %text--small;
       margin-top: 10px;
+
+      //@include media('<=1100px') {
+      //  margin-top: 7px;
+      //}
+
     }
 
     .link-wrapper {
