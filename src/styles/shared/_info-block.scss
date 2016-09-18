@@ -1,4 +1,6 @@
 
+@import '../vendors/include-media';
+@import './breakpoints';
 @import '../mixins/default';
 @import './block';
 
@@ -6,4 +8,9 @@
   @extend %common-block;
   padding: 30px 20px;
   min-height: 230px;
+
+  @include media('<=singleLayout') {
+    min-height: 0;
+  }
+
 }
